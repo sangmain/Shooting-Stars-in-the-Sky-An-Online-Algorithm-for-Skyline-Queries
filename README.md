@@ -12,35 +12,35 @@ This Skyline Query is a code I **programmed myself** which was first introduced 
 
 # Original Data (30 elements)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Original_Data.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Original_Data.png)
+![./images/Original_Data.png](./images/Original_Data.png)
 
 # Data after ignoring Region3
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_1.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_1.png)
+!./images/Datacut_1.png](./images/Datacut_1.png)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_2.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_2.png)
+![./images/Datacut_2.png](./images/Datacut_2.png)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_3.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_3.png)
+![./images/Datacut_3.png](./images/Datacut_3.png)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_4.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Datacut_4.png)
+![./images/Datacut_4.png](./images/Datacut_4.png)
 
 # Data from Region1
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region1_1.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region1_1.png)
+![./images/Region1_1.png](./images/Region1_1.png)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region1_2.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region1_2.png)
+![./images/Region1_2.png](./images/Region1_2.png)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region1_3.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region1_3.png)
+![./images/Region1_3.png](./images/Region1_3.png)
 
 # Data from Region2
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region2_1.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region2_1.png)
+![./images/Region2_1.png](./images/Region2_1.png)
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region2_2.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Region2_2.png)
+![./images/Region2_2.png](./images/Region2_2.png)
 
 # Result Skyline
 
-![Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Result.png](Shooting%20Stars%20in%20the%20Sky%20An%20Online%20Algorithm%20for%20/Result.png)
+![./images/Result.png](./images/Result.png)
 
 # References
 
