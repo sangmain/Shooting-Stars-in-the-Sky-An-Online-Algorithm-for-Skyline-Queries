@@ -14,7 +14,18 @@ dataset = pd.DataFrame({"price": prices, "distance": distances})
 
 # print(dataset.duplicated(['distance', 'price']))
 dataset.plot.scatter(x="price", y="distance")
+plt.show()
 
 ########
 import skyline_query as sq
-print(sq.getskylines(dataset))
+skylines = sq.getskylines(dataset)
+
+skylines = np.array(skylines)
+
+dataset.plot.scatter(x="price", y="distance", color="blue")
+plt.scatter(skylines[:, 0], skylines[:, 1], color="red", label="Skylines")
+plt.legend()
+plt.xlim(0.34752048913785316,  190.65247951086215) 
+plt.ylim(-0.06839386840927793, 2.0993498601356593)
+plt.savefig("Result")
+plt.show()
