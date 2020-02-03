@@ -16,7 +16,7 @@ This Skyline Query is a code I **programmed myself** which was first introduced 
 
 # Data after ignoring Region3
 
-!./images/Datacut_1.png](./images/Datacut_1.png)
+![./images/Datacut_1.png](./images/Datacut_1.png)
 
 ![./images/Datacut_2.png](./images/Datacut_2.png)
 
