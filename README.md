@@ -41,6 +41,9 @@ This Skyline Query is a code I **programmed myself** which was first introduced 
 # Result Skyline
 
 ![./images/Result.png](./images/Result.png)
+![./images/Result.png](./images/outprint1.png)
+![./images/Result.png](./images/outprint2.png)
+
 
 # References
 
