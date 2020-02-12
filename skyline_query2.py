@@ -22,7 +22,6 @@ def boundedNNSearch(data, distance_function):
 def getskylines(data, distance_function=euclidean_distance):
     ######### 데이터셋 정규화
     from sklearn.preprocessing import MinMaxScaler
-    import pandas as pd
     scaler = MinMaxScaler()
     data = scaler.fit_transform(data)
     

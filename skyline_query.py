@@ -44,16 +44,16 @@ def data_cut(data, todo, nn, region_idx):
 def getskylines(data, distance_function=euclidean_distance):
     ######### 데이터셋 정규화
     from sklearn.preprocessing import MinMaxScaler
-    import pandas as pd
     scaler = MinMaxScaler()
-    norm_data = scaler.fit_transform(data)
+    data = scaler.fit_transform(data)
     
-    norm_data = pd.DataFrame(norm_data, columns=data.columns)
+    # norm_data = pd.DataFrame(norm_data, columns=data.columns)
     # norm_data.plot.scatter(x="price", y="distance")
 
 
     todo = []
-    todo.append(norm_data.values) # Todo에 데이터 추가
+    todo.append(data) # Todo에 데이터 추가
+    del data
 
     skylines = []
 
@@ -71,11 +71,6 @@ def getskylines(data, distance_function=euclidean_distance):
         print(skylines)
 
         todo[i] = None # 필요없는 변수 없애기
-
-        
-    # print("Skylines: ", skylines)
-    # print(dataset.values.tolist())
-    # print(dataset)
 
     return skylines
 
