@@ -24,7 +24,7 @@ def getskylines(data, distance_function=euclidean_distance):
     from sklearn.preprocessing import MinMaxScaler
     scaler = MinMaxScaler()
     data = scaler.fit_transform(data)
-    
+    data = data.tolist()
     skylines = []
 
     data_dist = boundedNNSearch(data, distance_function) # 데이터 전체에 대한 Distance 값을 반환 받는다
