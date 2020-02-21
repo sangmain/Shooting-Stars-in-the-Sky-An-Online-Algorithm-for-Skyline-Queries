@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 ############################# 거리함수
 def euclidean_distance_2d(x, y):
-    import math
     distance = math.sqrt(sum([(a - b) ** 2 for a, b in zip(x, y)]))
     return distance
 
@@ -44,18 +44,17 @@ def getskylines(data, distance_function=euclidean_distance):
     index = 1
     while True:
         temp_data = []
-        for i in range(index, len(data), 1):
+        for i in range(1, len(data), 1):
             x, y = data[i]
 
-            if x >= data[index - 1][0] and y >=  data[index - 1][1]: # REGION 3면
+            if x >= skylines[index - 1][0] and y >=  skylines[index - 1][1]: # REGION 3면
                 continue
             temp_data.append(data[i])
-        
         data = temp_data
         if len(data) == 0 :
             break
-        skylines.append(data[index])
-        print(data[index])
+        skylines.append(data[0])
+        print(data[0])
         index += 1
 
     

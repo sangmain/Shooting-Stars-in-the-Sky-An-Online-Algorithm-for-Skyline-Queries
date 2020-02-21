@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import math
 
-data_cnt = 10000
+data_cnt = 30
 ############################# Dataset D
 random.seed(4379)
 # distances = [random.randint(0, 200) for _ in range(data_cnt)]/
@@ -20,12 +20,13 @@ for price, distance in zip(prices, distances):
 
 # print(dataset.duplicated(['distance', 'price']))
 print()
-plt.scatter(prices, distances)
-# dataset.plot.scatter(x="price", y="distance")
-plt.show()
+# plt.scatter(prices, distances)
+# # dataset.plot.scatter(x="price", y="distance")
+# plt.show()
 
 # ########
-import skyline_query2 as sq
+import skyline_query as sq
+# import skyline_query2 as sq
 skylines = sq.getskylines(dataset)
 
 skylines = np.array(skylines)
