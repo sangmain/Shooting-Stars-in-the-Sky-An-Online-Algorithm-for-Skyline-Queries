@@ -70,8 +70,8 @@ def getskylines(data, distance_function=euclidean_distance):
 
         
         nn = scaler.inverse_transform([nn]) #역정규화
-        skylines.append(nn.reshape(2).tolist()) #스카이라인 추가
-        print(nn)
+        skylines.append(nn.reshape(2)) #스카이라인 추가
+        print(nn.tolist())
 
         todo[i] = None # 필요없는 변수 없애기
 

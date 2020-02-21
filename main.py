@@ -2,6 +2,7 @@ import random
 import matplotlib.pyplot as plt
 import numpy as np
 import time
+
 data_cnt = 30
 ############################# Dataset D
 random.seed(4379)
