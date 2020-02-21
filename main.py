@@ -19,10 +19,10 @@ plt.show()
 ###########
 import skyline_query as sq ### 
 import skyline_query_sort as sq_sort
+
+print("Skyline_query Algorithm")
 start = time.time()
 skylines = sq.getskylines(dataset)
-print("Skyline_query Algorithm")
-print(skylines)
 print(time.time() - start)
 
 skylines = np.array(skylines)
@@ -31,10 +31,11 @@ plt.scatter(skylines[:, 0], skylines[:, 1], color="red", label="Skylines")
 plt.legend()
 plt.show()
 
+print()
 
-skylines = sq_sort.getskylines(dataset)
 print("Skyline_query Sorted Algorithm")
-print(skylines)
+start = time.time()
+skylines = sq_sort.getskylines(dataset)
 print(time.time() - start)
 
 skylines = np.array(skylines)
