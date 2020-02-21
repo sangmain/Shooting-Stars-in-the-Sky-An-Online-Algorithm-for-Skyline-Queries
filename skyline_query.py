@@ -48,19 +48,14 @@ def data_cut(data, todo, nn, region_idx):
 
 ############################# 메인 함수
 def getskylines(data, distance_function=euclidean_distance):
-    ######### 데이터셋 정규화
-#     from sklearn.preprocessing import MinMaxScaler
-#     scaler = MinMaxScaler()
-#     data = scaler.fit_transform(data)
-    
-    # norm_data = pd.DataFrame(norm_data, columns=data.columns)
-    # norm_data.plot.scatter(x="price", y="distance")
+    ######## 데이터셋 정규화 ## 정규화를 안하면 스카이라인을 찾는 순서가 실제로 NN아닐 수 있음
+    from sklearn.preprocessing import MinMaxScaler
+    scaler = MinMaxScaler()
+    data = scaler.fit_transform(data)
 
 
     todo = []
     todo.append(data) # Todo에 데이터 추가
-#     b = data
-#     b.sort()
     del data
 
     skylines = []
@@ -74,26 +69,10 @@ def getskylines(data, distance_function=euclidean_distance):
         data_cut(data, todo, nn, 2) # Region 2 todo에 추가
 
         
-#         nn = scaler.inverse_transform([nn]) #역정규화
-        skylines.append(nn) #스카이라인 추가
-#         skylines.append(nn.reshape(2).tolist()) #스카이라인 추가
+        nn = scaler.inverse_transform([nn]) #역정규화
+        skylines.append(nn.reshape(2).tolist()) #스카이라인 추가
         print(nn)
-    
-#         if i == 3:
-#             return skylines
 
         todo[i] = None # 필요없는 변수 없애기
 
     return skylines
-
-
-
-
-################################ PLOT용
-# data2 = scaler.inverse_transform(region)
-
-# plt.scatter(data2[:, 0], data2[:, 1])
-# plt.xlim(0.34752048913785316,  190.65247951086215) 
-# plt.ylim(-0.06839386840927793, 2.0993498601356593)
-# plt.savefig("Region")
-# plt.show(
